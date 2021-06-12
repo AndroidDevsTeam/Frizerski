@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BarberApp</string>
+    <string name="izaberitermin">Izaberi Termin</string>
+    <string name="welcome">Prepusti se nama i upoznaj najljepsu verziju sebe</string>
+    <string name="start">Startuj</string>
+    <string name="loginText">Prijava korisnika</string>
+    <string name="loginTextR">Ukoliko niste registrovani,kliknite ovde</string>
+    <string name="form_username">Korisnicko ime</string>
+    <string name="zaboravisifru">Zaboravili ste sifru?</string>
+    <string name="login">Uloguj se</string>
+    <string name="createaccount">Registracija korisnika</string>
+    <string name="opis">Da bi ste koristili aplikaciju potrebno je da napravite racun sa vasim podacima</string>
+    <string name="register">Registracija korisnika</string>
+    <string name="link">Vec ste registrovani? Prijavite se</string>
+    <string name="odjavise">Odjavi se</string>
+</resources>

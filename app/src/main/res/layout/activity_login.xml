@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:scrollbars="none"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+<androidx.cardview.widget.CardView
+    android:id="@+id/cards"
+    android:layout_marginTop="@dimen/_25sdp"
+    android:layout_width="@dimen/_300sdp"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    app:cardCornerRadius="@dimen/_20sdp"
+
+    >
+    <ImageView android:id="@+id/cesaljimakaze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="@dimen/_450sdp"
+        android:background="@drawable/round_corner_toggle"
+        android:maxHeight="@dimen/_300sdp"
+        android:scaleType="fitCenter"
+
+        android:src="@drawable/loginphoto"
+        >
+
+    </ImageView>
+
+</androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/prijavakorisnika"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/manrope_regular"
+        android:text="@string/loginText"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_25ssp"
+        android:layout_marginTop="@dimen/_220sdp"
+        />
+
+    <ImageView
+        android:id="@+id/ikone"
+        android:maxHeight="@dimen/_371sdp"
+        android:maxWidth="@dimen/_371sdp"
+        android:scaleType="fitCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_below="@id/prijavakorisnika"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ikonep" />
+    <TextView
+
+        android:id="@+id/prijavises"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ikone"
+        android:layout_marginTop="-19dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/manrope_regular"
+        android:text="@string/loginTextR"
+        android:textColor="#116AB1"/>
+<ProgressBar
+    android:id="@+id/loginprogressBar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="invisible"
+    android:layout_below="@id/prijavises"
+    android:layout_centerHorizontal="true"
+    />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/ikone"
+
+        android:textColorHint="@color/black"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+       android:layout_centerHorizontal="true"
+        app:counterEnabled="true"
+        android:id="@+id/txIUsername"
+
+
+       >
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/txtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:hint="  Email"
+            android:fontFamily="@font/manrope_regular"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawableTint="@color/black"
+            android:background="@drawable/round_corner_toggle"
+          />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/txIUsername"
+        android:textColorHint="@color/black"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+
+        android:layout_centerHorizontal="true"
+        app:counterEnabled="true"
+
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPassword"
+            android:fontFamily="@font/manrope_regular"
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:hint="  Sifra"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawableTint="@color/black"
+            android:background="@drawable/round_corner_toggle"
+            android:inputType="textPassword"
+           />
+    </com.google.android.material.textfield.TextInputLayout>
+    <CheckBox
+        android:id="@+id/checkB"
+        android:layout_below="@id/txIUsername"
+        android:layout_marginTop="@dimen/_55sdp"
+        android:layout_alignLeft="@id/txIUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Zapamti me"
+        />
+
+    <TextView
+
+        android:id="@+id/zaboravili"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txIUsername"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/manrope_regular"
+        android:text="@string/zaboravisifru"
+        android:textColor="#116AB1"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login"
+        android:fontFamily="@font/manrope_regular"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_width="@dimen/_179sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zaboravili"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:text="@string/login" />
+</RelativeLayout>
+</ScrollView>

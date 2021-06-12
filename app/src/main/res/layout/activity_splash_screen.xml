@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SplashScreen">
+<ImageView
+    android:id="@+id/splashslika"
+    android:layout_marginTop="@dimen/_11sdp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/splash"
+    android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/izaberitermin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splashslika"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/manrope"
+        android:text="@string/izaberitermin"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_25ssp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/splashporuka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/izaberitermin"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/manrope_regular"
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_25ssp"
+        />
+
+    <Button
+        android:id="@+id/btnstart"
+        android:layout_width="@dimen/_179sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splashporuka"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+android:fontFamily="@font/manrope"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        android:text="@string/start" />
+</RelativeLayout>

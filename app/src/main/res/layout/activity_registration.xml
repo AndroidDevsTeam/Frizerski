@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+
+
+    <TextView
+        android:id="@+id/titles"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/manrope"
+        android:textStyle="bold"
+        android:textSize="@dimen/_25ssp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="@string/createaccount"
+        android:textAppearance="@style/registracija"
+        android:lineSpacingExtra="0sp"
+        android:translationY="-0.21sp"
+        android:gravity="center_horizontal|top"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+android:layout_below="@+id/titles"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:src="@drawable/haircut"
+        app:civ_border_width="2dp"
+        android:id="@+id/profileimage"
+        app:civ_border_color="#FF000000"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/profileimage"
+        android:textColorHint="@color/black"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerHorizontal="true"
+        app:counterEnabled="true"
+        app:boxStrokeColor="@color/teal_200"
+        android:id="@+id/txtImePrezime"
+        app:counterMaxLength="8"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/txImePrezime"
+            android:fontFamily="@font/manrope_regular"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:hint="  Ime i Prezime"
+            android:drawableLeft="@drawable/ic_baseline_people_24"
+            android:drawableTint="@color/black"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/txtImePrezime"
+
+        android:textColorHint="@color/black"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerHorizontal="true"
+        app:counterEnabled="true"
+        android:id="@+id/txtUsernameR"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/txUsernameR"
+            android:fontFamily="@font/manrope_regular"
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:hint="  Email adresa"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawableTint="@color/black"
+             />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/txtUsernameR"
+
+        android:textColorHint="@color/black"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerHorizontal="true"
+        app:counterEnabled="true"
+        android:id="@+id/txtPasswordR"
+
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/txPasswordR"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:hint="  Sifra"
+            android:fontFamily="@font/manrope_regular"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawableTint="@color/black"
+           />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/txtPasswordR"
+
+        android:textColorHint="@color/black"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerHorizontal="true"
+        app:counterEnabled="true"
+        android:id="@+id/txtPotrvdiSifruR"
+
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/txtPotvrdiSifru"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:hint="  Potvrdi sifru"
+            android:fontFamily="@font/manrope_regular"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawableTint="@color/black"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@id/txtPotrvdiSifruR"
+
+        android:textColorHint="@color/black"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerHorizontal="true"
+        app:counterEnabled="true"
+        android:id="@+id/txBrTelefonaR"
+
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/txtBrTelefona"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:hint="  Broj telefona"
+            android:fontFamily="@font/manrope_regular"
+            android:inputType="phone"
+            android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+            android:drawableTint="@color/black"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ProgressBar
+        android:visibility="invisible"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/txBrTelefonaR"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/registerprogressbar"
+
+    />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnregister"
+        android:layout_width="@dimen/_179sdp"
+        android:fontFamily="@font/manrope_regular"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerprogressbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button"
+        android:text="@string/register" />
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_below="@id/btnregister"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/manrope_regular"
+        android:gravity="center_horizontal|center_vertical"
+        android:lineSpacingExtra="2sp"
+        android:text="@string/link"
+        android:textAppearance="@style/link" />
+
+
+</RelativeLayout>
+</ScrollView>
