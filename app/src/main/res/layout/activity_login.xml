@@ -84,15 +84,16 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_below="@id/ikone"
-
-        android:textColorHint="@color/black"
+app:boxStrokeColor="@color/black"
+        android:textColorHint="#9C9C9C"
         android:layout_width="@dimen/_250sdp"
         android:layout_height="@dimen/_50sdp"
        android:layout_centerHorizontal="true"
         app:counterEnabled="true"
         android:id="@+id/txIUsername"
-
-
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:startIconTint="#8C8C8C"
        >
 
         <com.google.android.material.textfield.TextInputEditText
@@ -100,37 +101,37 @@
             android:id="@+id/txtUsername"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
-            android:hint="  Email"
+            android:hint="Email"
+            android:textColor="@color/black"
+            android:textColorHint="#575757"
             android:fontFamily="@font/manrope_regular"
             android:inputType="textEmailAddress"
-            android:drawableLeft="@drawable/ic_baseline_email_24"
-            android:drawableTint="@color/black"
-            android:background="@drawable/round_corner_toggle"
+
           />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_below="@id/txIUsername"
-        android:textColorHint="@color/black"
+        android:textColorHint="#8C8C8C"
         android:layout_width="@dimen/_250sdp"
         android:layout_height="@dimen/_50sdp"
-
+        app:boxStrokeColor="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:layout_centerHorizontal="true"
         app:counterEnabled="true"
-
-
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:startIconTint="#8C8C8C"
+        app:endIconMode="password_toggle"
+        app:endIconTint="#8C8C8C"
         >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtPassword"
             android:fontFamily="@font/manrope_regular"
-
+            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
-            android:hint="  Sifra"
-            android:drawableLeft="@drawable/ic_baseline_lock_24"
-            android:drawableTint="@color/black"
-            android:background="@drawable/round_corner_toggle"
+            android:hint="Sifra"
             android:inputType="textPassword"
            />
     </com.google.android.material.textfield.TextInputLayout>

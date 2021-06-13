@@ -45,15 +45,17 @@ android:layout_below="@+id/titles"
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_below="@id/profileimage"
+        app:startIconDrawable="@drawable/ic_baseline_people_24"
+        app:startIconTint="@color/black"
         android:textColorHint="@color/black"
         android:layout_width="@dimen/_250sdp"
         android:layout_height="@dimen/_50sdp"
         android:layout_centerHorizontal="true"
         app:counterEnabled="true"
-        app:boxStrokeColor="@color/teal_200"
+        android:layout_marginTop="@dimen/_22sdp"
         android:id="@+id/txtImePrezime"
-        app:counterMaxLength="8"
-
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/black"
         >
 
         <com.google.android.material.textfield.TextInputEditText
@@ -62,48 +64,53 @@ android:layout_below="@+id/titles"
             android:fontFamily="@font/manrope_regular"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
-            android:hint="  Ime i Prezime"
-            android:drawableLeft="@drawable/ic_baseline_people_24"
-            android:drawableTint="@color/black"
+            android:hint="Ime i Prezime"
+            android:textColor="@color/black"
+
             />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_below="@id/txtImePrezime"
-
+        app:startIconDrawable="@drawable/ic_baseline_email_24"
+        app:startIconTint="@color/black"
         android:textColorHint="@color/black"
         android:layout_width="@dimen/_250sdp"
         android:layout_height="@dimen/_50sdp"
         android:layout_centerHorizontal="true"
         app:counterEnabled="true"
         android:id="@+id/txtUsernameR"
-
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/black"
         >
 
         <com.google.android.material.textfield.TextInputEditText
 
             android:id="@+id/txUsernameR"
             android:fontFamily="@font/manrope_regular"
-
+            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
-            android:hint="  Email adresa"
+            android:hint="Email adresa"
             android:inputType="textEmailAddress"
-            android:drawableLeft="@drawable/ic_baseline_email_24"
-            android:drawableTint="@color/black"
+
              />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_below="@id/txtUsernameR"
-
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/black"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:startIconTint="@color/black"
         android:textColorHint="@color/black"
         android:layout_width="@dimen/_250sdp"
         android:layout_height="@dimen/_50sdp"
         android:layout_centerHorizontal="true"
         app:counterEnabled="true"
         android:id="@+id/txtPasswordR"
-
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/black"
 
         >
 
@@ -112,11 +119,10 @@ android:layout_below="@+id/titles"
             android:id="@+id/txPasswordR"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
-            android:hint="  Sifra"
+            android:hint="Sifra"
+            android:textColor="@color/black"
             android:fontFamily="@font/manrope_regular"
             android:inputType="textPassword"
-            android:drawableLeft="@drawable/ic_baseline_lock_24"
-            android:drawableTint="@color/black"
            />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -126,11 +132,16 @@ android:layout_below="@+id/titles"
 
         android:textColorHint="@color/black"
         android:layout_width="@dimen/_250sdp"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/black"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:startIconTint="@color/black"
         android:layout_height="@dimen/_50sdp"
         android:layout_centerHorizontal="true"
         app:counterEnabled="true"
         android:id="@+id/txtPotrvdiSifruR"
-
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/black"
 
         >
 
@@ -139,22 +150,27 @@ android:layout_below="@+id/titles"
             android:id="@+id/txtPotvrdiSifru"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
-            android:hint="  Potvrdi sifru"
+            android:hint=" Potvrdi sifru"
+            android:textColor="@color/black"
             android:fontFamily="@font/manrope_regular"
             android:inputType="textPassword"
-            android:drawableLeft="@drawable/ic_baseline_lock_24"
             android:drawableTint="@color/black"
+
+
             />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_below="@id/txtPotrvdiSifruR"
-
+        app:startIconDrawable="@drawable/ic_baseline_local_phone_24"
+        app:startIconTint="@color/black"
         android:textColorHint="@color/black"
         android:layout_width="@dimen/_250sdp"
         android:layout_height="@dimen/_50sdp"
         android:layout_centerHorizontal="true"
         app:counterEnabled="true"
         android:id="@+id/txBrTelefonaR"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:boxStrokeColor="@color/black"
 
 
         >
@@ -164,11 +180,12 @@ android:layout_below="@+id/titles"
             android:id="@+id/txtBrTelefona"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_40sdp"
-            android:hint="  Broj telefona"
+            android:hint="Broj telefona"
+            android:textColor="@color/black"
             android:fontFamily="@font/manrope_regular"
             android:inputType="phone"
-            android:drawableLeft="@drawable/ic_baseline_local_phone_24"
-            android:drawableTint="@color/black"
+
+
             />
     </com.google.android.material.textfield.TextInputLayout>
 
